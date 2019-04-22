@@ -19,7 +19,7 @@ import lt.viko.webservices.rkomaristova.jaxws.entities.Princess;
 @WebService
 public class DragonServiceImpl implements DragonService {
 	
-	InMemoryDao dao = new InMemoryDaoImpl();
+	private InMemoryDao dao = new InMemoryDaoImpl();
 
 	@Override
 	public Dragon getDragonByName(String name) {
