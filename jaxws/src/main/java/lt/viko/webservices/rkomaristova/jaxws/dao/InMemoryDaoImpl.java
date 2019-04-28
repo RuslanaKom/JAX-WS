@@ -1,7 +1,5 @@
 package lt.viko.webservices.rkomaristova.jaxws.dao;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;

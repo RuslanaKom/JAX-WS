@@ -38,7 +38,10 @@ public class DragonServiceImpl implements DragonService {
 		if (null == dragon.getKnightsEaten()) {
 			dragon.setKnightsEaten(new ArrayList<>());
 		}
-		List<Knight> dublicateKnights = dragon.getKnightsEaten().stream().filter(k->StringUtils.equals(k.getFirstName(),name)&&StringUtils.equals(k.getNobleName(),nobleName)).collect(Collectors.toList());
+		List<Knight> dublicateKnights = dragon.getKnightsEaten()
+				.stream()
+				.filter(k->StringUtils.equals(k.getFirstName(),name)&&StringUtils.equals(k.getNobleName(),nobleName))
+				.collect(Collectors.toList());
 		if (dublicateKnights.isEmpty()) {
 			dragon.getKnightsEaten().add(knight);
 		}
